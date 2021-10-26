@@ -1,0 +1,417 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(31, 31, 31);
+  color: rgb(221, 221, 221);
+}
+nav {
+  margin: 20px 0px;
+  margin-bottom: -20px;
+  font-family: "Roboto";
+  width: 100%;
+  height: 90px;
+}
+
+nav h2 {
+  float: left;
+  font-weight: 500;
+  margin: 25px 0px;
+  letter-spacing: 6px;
+  padding: 0px 20px;
+  text-transform: uppercase;
+}
+nav .ime .ibro {
+  animation: namecolors 3s infinite ease;
+  background-color: rgb(255, 216, 44);
+  margin-left: 10px;
+  color: rgb(54, 54, 54);
+}
+nav .hodzic {
+  color: rgb(221, 221, 221);
+}
+nav .ime {
+}
+nav ul {
+  display: block;
+  text-decoration: unset;
+}
+nav ul li {
+  font-family: "Roboto";
+  font-weight: 400;
+  float: right;
+  list-style: none;
+  padding: 0px 20px;
+  margin: 30px 30px;
+}
+
+nav li:first-child {
+  margin: 30px 10px;
+}
+nav ul li a {
+  color: rgb(221, 221, 221);
+  text-decoration: none;
+  list-style: unset;
+  list-style-type: none;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  width: 100%;
+  height: 85vh;
+  background-image: url("./src/firstWallpaper.jpg");
+  position: relative;
+  background-size: 100%;
+  z-index: 2;
+  background-position: center;
+  background-size: cover;
+  margin-top: 30px;
+}
+.parts section {
+  padding: 5vh 0vh;
+}
+.backdrop {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: unset;
+}
+
+.content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  color: rgb(236, 233, 233);
+  overflow: hidden;
+}
+
+.content h1 {
+  font-size: 50px;
+  padding: 5vh;
+  font-family: "Lato";
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-style: italic;
+  animation: moveOpposite 2s ease;
+}
+.content button {
+  font-size: 2vh;
+  color: rgb(236, 233, 233);
+  border-color: rgb(236, 233, 233);
+  padding: 2vh;
+  background-color: unset;
+  border-radius: 1vh;
+  font-family: "Open Sans Condensed";
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.9;
+  border: 1px solid rgb(236, 233, 233);
+  cursor: pointer;
+  animation: buttonjump 2.5s ease;
+  transition: 0.5s ease all;
+  scroll-behavior: smooth;
+}
+.content button a {
+  color: rgb(236, 233, 233);
+  list-style-type: none;
+  text-decoration: none;
+}
+.content button:hover {
+  background-color: rgb(236, 233, 233);
+  padding: 2.5vh;
+  color: rgb(54, 54, 54);
+}
+.content button:hover a {
+  color: rgb(54, 54, 54);
+}
+
+.content p {
+  font-size: 30px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-style: italic;
+  margin-left: 50px;
+  animation: move 1s ease;
+}
+.firstSection {
+  display: flex;
+  margin: 20px;
+  padding: 10px;
+}
+.firstSection h1 {
+  width: 100%;
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto";
+  letter-spacing: 10px;
+}
+.firstSection .line {
+  width: 100%;
+  height: 2px;
+  margin: 0px auto;
+  background-color: rgb(255, 216, 44);
+}
+.sectionText p {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  margin: 20px 0px;
+  word-spacing: 5px;
+  text-align: justify;
+}
+
+.sectionText {
+  width: 500px;
+}
+
+.firstSection {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.myPicture img {
+  width: 450px;
+  height: 300px;
+  margin: 10px;
+}
+
+.myPicture {
+  background-color: rgba(255, 255, 255, 0.089);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.secondSection {
+  display: flex;
+  margin: 20px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.secondSection h1 {
+  width: 100%;
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Roboto";
+  letter-spacing: 10px;
+  overflow: hidden;
+}
+.secondSection .line {
+  width: 100%;
+  height: 2px;
+  margin: 0px auto;
+  background-color: rgb(255, 216, 44);
+}
+
+.parts .secondSection .sectionText ol {
+  font-family: "Zen Kurenaido";
+  font-size: 75px;
+  margin: 20px 0px;
+  word-spacing: 5px;
+  text-align: justify;
+  color: white;
+  list-style-type: none;
+}
+
+.sectionText {
+  width: 500px;
+}
+
+.secondSectiontitle {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 85vh;
+  background-image: url("./src/mywork.jpg");
+  position: relative;
+  background-size: 100%;
+  z-index: 2;
+  background-position: center;
+  background-size: cover;
+  margin-top: 30px;
+}
+.line2 {
+  display: none;
+  width: 100%;
+  height: 3px;
+  margin: 0px auto;
+  background-color: white;
+}
+.secondSectiontitle h1 {
+  font-family: "Roboto";
+  cursor: default;
+  letter-spacing: 10px;
+  font-size: 10vh;
+  overflow: hidden;
+  transition: 0.5s ease all;
+}
+.secondSectiontitle h1:hover {
+  color: rgb(255, 216, 44);
+  font-size: 12vh;
+  overflow: hidden;
+}
+.secondSectiontitle div:hover .line2 {
+  display: block;
+  width: 100%;
+  height: 3px;
+  margin: 0px auto;
+  background-color: rgb(255, 216, 44);
+  animation: 1s lineanimation ease;
+}
+.parttwo {
+  display: flex;
+}
+i .fa .fa-github {
+  font-size: 48px;
+  color: red;
+  text-decoration: none;
+}
+a .git {
+  text-decoration: none;
+}
+a .fa {
+  color: red;
+  transition: 0.5s ease all;
+}
+a .fa:hover {
+  font-size: 100px;
+  color: white;
+}
+.thirdSection {
+  display: flex;
+  margin: 20px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.thirdSection h1 {
+  font-size: 10vh;
+  font-family: ;
+}
+.thirdSection .sectionText ol li {
+  font-size: 5vh;
+  font-family: "Roboto";
+  font-weight: 500;
+}
+.thirdSection .sectionText a .fa {
+  font-size: 7vh;
+  margin: 0 1vh;
+}
+#randomname {
+  color: white;
+}
+@keyframes move {
+  0% {
+    transform: translateX(-800px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes moveOpposite {
+  0% {
+    transform: translateX(800px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes namecolors {
+  0% {
+    background-color: rgb(255, 187, 0);
+  }
+  50% {
+    background-color: rgb(255, 230, 0);
+  }
+  100% {
+    background-color: rgb(255, 187, 0);
+  }
+}
+@keyframes buttoncolor {
+  0% {
+    background-color: unset;
+    padding: 2vh;
+    margin-top: 0;
+  }
+  100% {
+    background-color: rgb(236, 233, 233);
+    color: rgb(54, 54, 54);
+    padding: 2.5vh;
+  }
+}
+@keyframes buttonjump {
+  0% {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes secondsectionanimation {
+  0% {
+    font-size: 10vh;
+    color: white;
+    overflow: hidden;
+  }
+  100% {
+    color: rgb(255, 216, 44);
+    font-size: 12vh;
+    overflow: hidden;
+  }
+}
+@keyframes lineanimation {
+  0% {
+    height: 1px;
+    opacity: 0;
+    transform: translateX(300px);
+    overflow: hidden;
+    color: white;
+  }
+  100% {
+    height: 3px;
+    opacity: 1;
+    transform: translateX(0);
+    overflow: hidden;
+    color: rgb(255, 216, 44);
+  }
+}
