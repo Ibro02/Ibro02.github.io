@@ -288,6 +288,11 @@ nav ul li a:hover {
   font-size: 12vh;
   overflow: hidden;
 }
+.secondSectiontitle a {
+  list-style-type: none;
+  text-decoration: none;
+  color: rgb(221, 221, 221);
+}
 .secondSectiontitle div:hover .line2 {
   display: block;
   width: 100%;
@@ -370,6 +375,7 @@ footer h1 {
   font-weight: 400;
   margin: 40px;
 }
+
 @keyframes move {
   0% {
     transform: translateX(-800px);
