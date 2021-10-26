@@ -5,6 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -314,6 +315,21 @@ a .fa:hover {
   font-size: 100px;
   color: white;
 }
+a .fa:hover ol li {
+  font-size: 10px;
+}
+ol li .fb .fa:hover {
+  color: blue !important;
+}
+ol li .ig .fa:hover {
+  background: -webkit-linear-gradient(#fbad5f, #cd486b, rgb(94, 12, 202));
+  -webkit-background-clip: text;
+  transition: 0.5s ease;
+  -webkit-text-fill-color: transparent;
+}
+ol li .gm .fa:hover {
+  color: rgb(255, 115, 0) !important;
+}
 .thirdSection {
   display: flex;
   margin: 20px;
@@ -321,21 +337,38 @@ a .fa:hover {
   justify-content: center;
   align-items: center;
 }
+
 .thirdSection h1 {
   font-size: 10vh;
   font-family: "Roboto";
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .thirdSection .sectionText ol li {
-  font-size: 5vh;
+  padding: 20px;
+  font-size: 7vh;
   font-family: "Roboto";
   font-weight: 500;
+  display: flex;
+  justify-content: center;
+  text-align: left;
 }
 .thirdSection .sectionText a .fa {
   font-size: 7vh;
   margin: 0 1vh;
 }
+
 #randomname {
   color: white;
+}
+footer h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Bebas Neue";
+  font-weight: 400;
+  margin: 40px;
 }
 @keyframes move {
   0% {
