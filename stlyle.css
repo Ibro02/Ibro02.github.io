@@ -454,3 +454,128 @@ footer h1 {
     color: rgb(255, 216, 44);
   }
 }
+@media (max-width: 835px) {
+  nav {
+    margin: 10px 0px;
+    margin-bottom: -20px;
+    font-family: "Roboto";
+    width: 100%;
+    height: 90px;
+  }
+  nav ul {
+    display: block;
+    text-decoration: unset;
+  }
+  nav ul li {
+    display: none;
+  }
+}
+
+@media (max-width: 565px) {
+  body {
+    text-align: center;
+  }
+
+  .hero {
+    width: 100%;
+    height: 85vh;
+    background-image: url("./src/firstWallpaper.jpg");
+    position: relative;
+    background-size: 100%;
+    z-index: 2;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    margin-top: 30px;
+  }
+  .parts section {
+    padding: 5vh 0vh;
+  }
+  .backdrop {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: unset;
+  }
+
+  .content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    color: rgb(236, 233, 233);
+    overflow: hidden;
+  }
+
+  .content h1 {
+    font-size: 20px;
+    padding: 2vh;
+    font-family: "Lato";
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-style: italic;
+    animation: moveOpposite 2s ease;
+  }
+  .content button {
+    font-size: 2vh;
+    color: rgb(236, 233, 233);
+    border-color: rgb(236, 233, 233);
+    padding: 2vh;
+    background-color: unset;
+    border-radius: 1vh;
+    font-family: "Open Sans Condensed";
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.9;
+    border: 1px solid rgb(236, 233, 233);
+    cursor: pointer;
+    animation: buttonjump 2.5s ease;
+    transition: 0.5s ease all;
+    scroll-behavior: smooth;
+  }
+  .sectionText {
+    width: 100%;
+    margin: 0px auto;
+  }
+  .myPicture img {
+    width: 90%;
+    height: 200px;
+    margin: 2px;
+  }
+
+  .parts .secondSection .sectionText ol {
+    font-size: 50px;
+  }
+  .sectionText ol {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .sectionText ol li {
+    display: flex;
+    flex-direction: column;
+  }
+  .sectionText ol li i {
+    display: flex;
+    justify-content: center;
+  }
+  ol li .fb .fa {
+    color: blue !important;
+  }
+  ol li .ig .fa {
+    background: -webkit-linear-gradient(#fbad5f, #cd486b, rgb(94, 12, 202));
+    -webkit-background-clip: text;
+    transition: 0.5s ease;
+    -webkit-text-fill-color: transparent;
+  }
+  ol li .in .fa {
+    color: lightblue;
+  }
+  ol li .gm .fa {
+    color: rgb(255, 115, 0) !important;
+  }
+}
