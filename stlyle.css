@@ -15,9 +15,13 @@
 html {
   overflow-x: hidden;
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 body {
+  display: block;
+  margin: 0px;
+  padding: 0px;
   background-color: rgb(31, 31, 31);
   color: rgb(221, 221, 221);
 }
@@ -216,6 +220,7 @@ nav ul li a:hover {
 
 .secondSection {
   display: flex;
+  box-sizing: border-box;
   margin: 20px;
   padding: 10px;
   justify-content: center;
@@ -378,7 +383,7 @@ footer h1 {
 
 @keyframes move {
   0% {
-    transform: translateX(-800px);
+    transform: translateX(-100px);
   }
   100% {
     transform: translateX(0px);
@@ -386,7 +391,7 @@ footer h1 {
 }
 @keyframes moveOpposite {
   0% {
-    transform: translateX(800px);
+    transform: translateX(100px);
   }
   100% {
     transform: translateX(0px);
@@ -475,15 +480,57 @@ footer h1 {
   body {
     text-align: center;
   }
-
-  .hero {
+  nav ul {
+    display: none;
+  }
+  nav .ime {
+    flex-wrap: wrap;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  .firstSection {
     width: 100%;
+  }
+  .sectionText p {
+    word-spacing: 0px;
+  }
+  .thirdsection ol li a {
+    list-style-type: none;
+    text-decoration: none;
+  }
+  .thirdsection ol li a i {
+    list-style-type: none;
+    text-decoration: none;
+  }
+  .secondSectiontitle a {
+    list-style-type: none;
+    text-decoration: none;
+    color: rgb(221, 221, 221);
+  }
+  * {
+    clear: right;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+  }
+  nav {
+    box-sizing: border-box;
+  }
+  .enter {
+    width: 100%;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero {
     height: 85vh;
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
     background-image: url("./src/firstWallpaper.jpg");
-    position: relative;
     background-size: 100%;
     z-index: 2;
-    text-align: center;
     background-position: center;
     background-size: cover;
     margin-top: 30px;
@@ -538,15 +585,21 @@ footer h1 {
     scroll-behavior: smooth;
   }
   .sectionText {
-    width: 100%;
+    width: 70%;
     margin: 0px auto;
+    float: none;
+  }
+  #section1 {
+    margin: auto;
   }
   .myPicture img {
     width: 90%;
     height: 200px;
     margin: 2px;
   }
-
+  .secondSection {
+    position: relative;
+  }
   .parts .secondSection .sectionText ol {
     font-size: 50px;
   }
@@ -577,5 +630,45 @@ footer h1 {
   }
   ol li .gm .fa {
     color: rgb(255, 115, 0) !important;
+  }
+  nav h2 {
+    float: none;
+    font-weight: 500;
+    margin: 20px 0px;
+    letter-spacing: 3px;
+    padding: 0px 3px;
+    text-transform: uppercase;
+  }
+  nav .ime {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vw;
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .secondSection .line {
+    display: none;
+  }
+
+  .secondSectiontitle div:focus .line2 {
+    display: none;
+    height: 3px;
+    margin: 0px auto;
+    background-color: rgb(255, 216, 44);
+    animation: none;
+    display: none;
+  }
+  .textMe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    box-sizing: border-box;
+  }
+  .textMe .line {
+    display: none;
   }
 }
