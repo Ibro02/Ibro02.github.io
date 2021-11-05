@@ -89,6 +89,7 @@ nav ul li a:hover {
   background-size: cover;
   margin-top: 30px;
 }
+
 .parts section {
   padding: 5vh 0vh;
 }
@@ -459,6 +460,8 @@ footer h1 {
     color: rgb(255, 216, 44);
   }
 }
+
+/*----------------MEDIA QUERIES---------------*/
 @media (max-width: 835px) {
   nav {
     margin: 10px 0px;
@@ -611,6 +614,7 @@ footer h1 {
   .sectionText ol li {
     display: flex;
     flex-direction: column;
+    text-align: center;
   }
   .sectionText ol li i {
     display: flex;
@@ -620,7 +624,7 @@ footer h1 {
     color: blue !important;
   }
   ol li .ig .fa {
-    background: -webkit-linear-gradient(#fbad5f, #cd486b, rgb(94, 12, 202));
+    background: rgb(243, 145, 161);
     -webkit-background-clip: text;
     transition: 0.5s ease;
     -webkit-text-fill-color: transparent;
