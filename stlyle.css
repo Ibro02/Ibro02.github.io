@@ -633,11 +633,8 @@ footer h1 {
   ol li .fb .fa {
     color: blue !important;
   }
-  ol li .ig .fab {
-    background: -webkit-linear-gradient(#fbad5f, #cd486b, rgb(94, 12, 202));
-    -webkit-background-clip: text;
-    transition: 0.5s ease;
-    -webkit-text-fill-color: transparent;
+  ol li .ig .fa-instagram {
+    color: rgb(248, 101, 126);
   }
   ol li .in .fa {
     color: lightblue;
