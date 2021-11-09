@@ -322,6 +322,12 @@ a .fa {
   color: red;
   transition: 0.5s ease all;
 }
+a .fab {
+  font-size: 7vh;
+  margin: 0 1vh;
+  color: red;
+  transition: 0.5s ease all;
+}
 a .fa:hover {
   font-size: 100px;
   color: white;
@@ -332,7 +338,11 @@ a .fa:hover ol li {
 ol li .fb .fa:hover {
   color: blue !important;
 }
-ol li .ig .fa:hover {
+
+i .fab:hover {
+  transition: 0.5s ease all;
+}
+ol li .ig .fab:hover {
   background: -webkit-linear-gradient(#fbad5f, #cd486b, rgb(94, 12, 202));
   -webkit-background-clip: text;
   transition: 0.5s ease;
@@ -623,8 +633,8 @@ footer h1 {
   ol li .fb .fa {
     color: blue !important;
   }
-  ol li .ig .fa {
-    background: rgb(243, 145, 161);
+  ol li .ig .fab {
+    background: -webkit-linear-gradient(#fbad5f, #cd486b, rgb(94, 12, 202));
     -webkit-background-clip: text;
     transition: 0.5s ease;
     -webkit-text-fill-color: transparent;
@@ -674,5 +684,17 @@ footer h1 {
   }
   .textMe .line {
     display: none;
+  }
+}
+@media (max-width: 300px) {
+  .thirdSection h1 {
+    font-size: 50px;
+    font-family: "Roboto";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .thirdSection .sectionText ol li {
+    font-size: 40px;
   }
 }
